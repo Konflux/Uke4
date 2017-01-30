@@ -6,5 +6,6 @@ func main(){
   fmt.Println("Vi er gruppe 9, Dyreparken \nog vi består av:")
   fmt.Println("Marius")
   fmt.Println("Nikolai")
+  fmt.Println("Erik")
   //legg til navnene deres nedover her i et Println statement
 }
