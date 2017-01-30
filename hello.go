@@ -7,5 +7,7 @@ func main(){
   fmt.Println("Marius")
   fmt.Println("Nikolai")
   fmt.Println("Erik")
-  //legg til navnene deres nedover her i et Println statement
+  fmt.Println("Ella")
+  fmt.Println("Sindre")
+  fmt.Println("Gisle Tarhavn")
 }
