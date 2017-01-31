@@ -50,9 +50,14 @@ Git push
 Oppgave 1.2.4
 1)
 Git-flow er et fint verktøy når alle er komfortable med git og kan git-flow modellen
-Men hvis vi kommer i en situasjon hvor noen ikke kan modellen godt nok eller lignende så har vi et problem.
+Men om vi kommer i en situasjon hvor noen ikke kan modellen godt nok eller lignende så har vi et problem.
+Om noen ikke vet hvordan en skal jobbe, og hvordan strukturen skal være, kan det by på problemer. Om en ikke
+bryr seg om struktur kan det føre til rot i de forskjellige branch`ene.
 
-Ellers så fungerer det veldig fint da man alltid har en fullt deployable versjon av programmet sitt, og mulighet for å legge til/teste nye funksjoner uten å påvirke master branch.
+Ellers så fungerer det veldig fint da man alltid har en fullt deployable versjon av programmet sitt,
+og mulighet for å legge til/teste nye funksjoner uten å påvirke master branch.
+Så lenge en holder orden i de forskjellige branch`ene, og ikke blander ting vil det være et veldig
+bra verktøy. 
 
 2)Objektfiler:
 Windows - MSI (microsoft self installer)
