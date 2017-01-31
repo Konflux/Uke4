@@ -55,7 +55,7 @@ bryr seg om struktur kan det føre til rot i de forskjellige branch`ene.
 Ellers så fungerer det veldig fint da man alltid har en fullt deployable versjon av programmet sitt,
 og mulighet for å legge til/teste nye funksjoner uten å påvirke master branch.
 Så lenge en holder orden i de forskjellige branch`ene, og ikke blander ting vil det være et veldig
-bra verktøy. 
+bra verktøy.
 
 2)Objektfiler:
 Windows - MSI (microsoft self installer)
