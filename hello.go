@@ -3,6 +3,7 @@ package main
 import "fmt"
 
 func main(){
+  fmt.Println("Hello, 世界")
   fmt.Println("Vi er gruppe 9, Dyreparken \nog vi består av:")
   fmt.Println("Marius")
   fmt.Println("Nikolai")

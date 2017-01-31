@@ -1,45 +1,49 @@
 Oppgave 1.21
+Konverter til 2-tallssystemet
+1) 0001 = 1
+2) 0010 = 2
+3) 0101 = 5
+4) 1000 = 8
+5) 10000 = 16
+6) 100000000 = 256
 
-0001 = 1
-0010 = 2
-0101 = 5
-1000 = 8
-10000 = 16
-100000000 = 256
-
-100 = 4
-1001 = 9
-1100 1100 11 = 819
+Konverter følgende til desimaltall:
+1) 100 = 4
+2) 1001 = 9
+3) 1100 1100 11 = 819
 
 Vi begynner med tallet 1 på høyre side, og tall dobler seg hele veien.
 Vi kan enten telle fra en side til en annen, eller bruke formlen:
 Binærtall *2^posisjonen i vårt tallsystem
 Eks:
 1×28 + 0×27 + 1×26 + 1×25 + 0×24 + 0×23 + 1×22 + 0×21 + 1×20
-
 = 1×256 + 0×128 + 1×64 + 1×32 + 0×16 + 0×8 + 1×4 + 0×2 + 1×1
-
 = 256 + 64 + 32 + 4 + 1
-
 = 357
 
-For å gå andre veien kan vi dele på 2, og følge med på hva vi har igjen, eks:
+For å gå andre veien kan vi dele på 2, og følge med på hva vi har i rest, eks:
+
 
 
 1.2.2
-Tallet blir 101
+1) Vi lærer at tallet er et oddetall, og at det er tresifret, noe som vil si at
+vi står igjen med fire valg og to valgmuligheter, og regnestykket blir da:
+Log2(4/2) = 1 bit
 
-Formel:
-Log2(Valgmuligheter (M)/Antall siffer (N))
-Antall siffer/Valgmuligheter
-3/2
-1.5 Bit
+2) Vi lærer at tallet ikke er et multiplum av tre, og vi har fire valg.
+Siden vi fikk vite at tallet ikke er et multiplum av tre blir formelen Log2(4/1) = 2
+
+3) Vi lærer at tallet inneholder nøyaktig to enere, og vi har fire totale valg,
+og to valgmuligheter. Dette gir formelen Log2(4/2) = 1 bit
+
+4) Siden lise har mottat all den samme informasjonen som de andre har hun mottat
+1+2+1 bit, altså 4 bit.
+
 
 Oppgave 1.2.3
-Allerede satt opp git
 Git clone
 Git status
-Git add *
+Git add .
 Git commit -m "Melding"
 Git push
 
@@ -61,6 +65,9 @@ Import (
 Pakke1
 Pakke2
 )
+
+Man trenger også generelt mindre kode i Golang, da den automatisk skjønner mye
+som java
 
 Ellers så slipper man semikolon på enden av hver setning
 I if statements og lignende slipper man også å bruke () for å holde statementet
