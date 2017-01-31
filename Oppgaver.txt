@@ -23,8 +23,6 @@ Eks:
 
 For å gå andre veien kan vi dele på 2, og følge med på hva vi har i rest, eks:
 
-
-
 1.2.2
 1) Vi lærer at tallet er et oddetall, og at det er tresifret, noe som vil si at
 vi står igjen med fire valg og to valgmuligheter, og regnestykket blir da:
@@ -64,25 +62,32 @@ Windows - MSI (microsoft self installer)
 Mac OS X - Mach-O
 Linux - ELF (Executable and linkable format)
 
+Disse plattformene har forskjellige objektfiler siden de er strukturert på forskjellige måter.
+OS X, Windows og Unix/Linux har forskjellige filstrukturer, og kjører på forskjellige kernels.
+En fil designet for å assigne verdier til registre i Windows ville derfor fungert dårlig på en Unix platform.
+
 3)
 Det er forskjeller fra java, blant annet ved import statementet, hvor man kan importere slik som java, eller flere pakker samtidig med
 Import (
 Pakke1
 Pakke2
 )
-
 Man trenger også generelt mindre kode i Golang, da den automatisk skjønner mye
-som java
-
+som må manuelt defineres i java (som for eksempel break i en switch, dette tar golang automatisk).
 Ellers så slipper man semikolon på enden av hver setning
 I if statements og lignende slipper man også å bruke () for å holde statementet
 
 4)
-De fleste programmeringsmiljøer er forskjellige, og krever derfor forskjellig tankegang. I og sitt tilfelle er riktig mappestruktur utrolig viktig for at det skal fungere på riktig måte.
+Alle programmeringsmiljøer er forskjellige, og krever derfor litt forskjellig tankegang.
+I Go sitt tilfelle er riktig mappestruktur en sentral del for at alt skal fungere slik man vil.
+Hvis man setter GOPATH feil, eller ikke legger prosjektene i GOPATH\src, så vil ikke programmene kjøre.
 
 5)
-Det er hensiktsmessig å legge denne i et git repository fordi man da har bedre kontroll over filen. Det er også lettere å dele denne med de andre gruppemedlemmene.
+Det kan være hensiktsmessig å legge denne i et git repository,
+man har da backup av filen, og i dette tilfellet hvor den er en del av en innlevering
+så gir det mening å legge den sammen med de andre delene av innleveringen.
 
 6)
-Pakken log som vi implementere skiller seg ut ved at den er veldig liten, men i motsetning til fmt så er log designet for å utføre en utregning,
-mens fmt er til for funksjoner relatert til tekst og formater
+log pakken som vi har implementert skiller seg ut ved at den er en liten pakke, for eksempel i motsetning til fmt.
+Log har også kun en funksjon, som betyr at den kun gjør en liten ting, mens fmt har mangs bruksområder
+eks Println.
