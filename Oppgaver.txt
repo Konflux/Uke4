@@ -1,0 +1,93 @@
+Oppgave 1.21
+Konverter til 2-tallssystemet
+1) 0001 = 1
+2) 0010 = 2
+3) 0101 = 5
+4) 1000 = 8
+5) 10000 = 16
+6) 100000000 = 256
+
+Konverter følgende til desimaltall:
+1) 100 = 4
+2) 1001 = 9
+3) 1100 1100 11 = 819
+
+Vi begynner med tallet 1 på høyre side, og tall dobler seg hele veien.
+Vi kan enten telle fra en side til en annen, eller bruke formlen:
+Binærtall *2^posisjonen i vårt tallsystem
+Eks:
+1×28 + 0×27 + 1×26 + 1×25 + 0×24 + 0×23 + 1×22 + 0×21 + 1×20
+= 1×256 + 0×128 + 1×64 + 1×32 + 0×16 + 0×8 + 1×4 + 0×2 + 1×1
+= 256 + 64 + 32 + 4 + 1
+= 357
+
+
+1.2.2
+1) Vi lærer at tallet er et oddetall, og at det er tresifret, noe som vil si at
+vi står igjen med fire valg og to valgmuligheter, og regnestykket blir da:
+Log2(4/2) = 1 bit
+
+2) Vi lærer at tallet ikke er et multiplum av tre, og vi har fire valg.
+Siden vi fikk vite at tallet ikke er et multiplum av tre blir formelen Log2(4/1) = 2
+
+3) Vi lærer at tallet inneholder nøyaktig to enere, og vi har fire totale valg,
+og to valgmuligheter. Dette gir formelen Log2(4/2) = 1 bit
+
+4) Siden lise har mottat all den samme informasjonen som de andre har hun mottat
+1+2+1 bit, altså 4 bit.
+
+
+Oppgave 1.2.3
+Git clone
+Git status
+Git add .
+Git commit -m "Melding"
+Git push
+
+
+Oppgave 1.2.4
+1)
+Git-flow er et fint verktøy når alle er komfortable med git og kan git-flow modellen
+Men om vi kommer i en situasjon hvor noen ikke kan modellen godt nok eller lignende så har vi et problem.
+Om noen ikke vet hvordan en skal jobbe, og hvordan strukturen skal være, kan det by på problemer. Om en ikke
+bryr seg om struktur kan det føre til rot i de forskjellige branch`ene.
+
+Ellers så fungerer det veldig fint da man alltid har en fullt deployable versjon av programmet sitt,
+og mulighet for å legge til/teste nye funksjoner uten å påvirke master branch.
+Så lenge en holder orden i de forskjellige branch`ene, og ikke blander ting vil det være et veldig
+bra verktøy.
+
+2)Objektfiler:
+Windows - MSI (microsoft self installer)
+Mac OS X - Mach-O
+Linux - ELF (Executable and linkable format)
+
+Disse plattformene har forskjellige objektfiler siden de er strukturert på forskjellige måter.
+OS X, Windows og Unix/Linux har forskjellige filstrukturer, og kjører på forskjellige kernels.
+En fil designet for å assigne verdier til registre i Windows ville derfor fungert dårlig på en Unix platform.
+
+3)
+Det er forskjeller fra java, blant annet ved import statementet, hvor man kan importere slik som java, eller flere pakker samtidig med
+Import (
+Pakke1
+Pakke2
+)
+Man trenger også generelt mindre kode i Golang, da den automatisk skjønner mye
+som må manuelt defineres i java (som for eksempel break i en switch, dette tar golang automatisk).
+Ellers så slipper man semikolon på enden av hver setning
+I if statements og lignende slipper man også å bruke () for å holde statementet
+
+4)
+Alle programmeringsmiljøer er forskjellige, og krever derfor litt forskjellig tankegang.
+I Go sitt tilfelle er riktig mappestruktur en sentral del for at alt skal fungere slik man vil.
+Hvis man setter GOPATH feil, eller ikke legger prosjektene i GOPATH\src, så vil ikke programmene kjøre.
+
+5)
+Det kan være hensiktsmessig å legge denne i et git repository,
+man har da backup av filen, og i dette tilfellet hvor den er en del av en innlevering
+så gir det mening å legge den sammen med de andre delene av innleveringen.
+
+6)
+log pakken som vi har implementert skiller seg ut ved at den er en liten pakke, for eksempel i motsetning til fmt.
+Log har også kun en funksjon, som betyr at den kun gjør en liten ting, mens fmt har mangs bruksområder
+eks Println.
