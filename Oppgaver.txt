@@ -23,8 +23,6 @@ Eks:
 
 For å gå andre veien kan vi dele på 2, og følge med på hva vi har i rest, eks:
 
-
-
 1.2.2
 1) Vi lærer at tallet er et oddetall, og at det er tresifret, noe som vil si at
 vi står igjen med fire valg og to valgmuligheter, og regnestykket blir da:
@@ -58,6 +56,10 @@ Ellers så fungerer det veldig fint da man alltid har en fullt deployable versjo
 Windows - MSI (microsoft self installer)
 Mac OS X - Mach-O
 Linux - ELF (Executable and linkable format)
+
+Disse plattformene har forskjellige objektfiler siden de er strukturert på forskjellige måter.
+OS X, Windows og Unix/Linux har forskjellige filstrukturer, og kjører på forskjellige kernels.
+En fil designet for å assigne verdier til registre i Windows ville derfor fungert dårlig på en Unix platform.
 
 3)
 Det er forskjeller fra java, blant annet ved import statementet, hvor man kan importere slik som java, eller flere pakker samtidig med
