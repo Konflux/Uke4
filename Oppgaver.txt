@@ -21,7 +21,6 @@ Eks:
 = 256 + 64 + 32 + 4 + 1
 = 357
 
-For å gå andre veien kan vi dele på 2, og følge med på hva vi har i rest, eks:
 
 1.2.2
 1) Vi lærer at tallet er et oddetall, og at det er tresifret, noe som vil si at
@@ -44,6 +43,7 @@ Git status
 Git add .
 Git commit -m "Melding"
 Git push
+
 
 Oppgave 1.2.4
 1)
